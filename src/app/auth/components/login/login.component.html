@@ -1,0 +1,20 @@
+<body>
+	<div class="main">  	
+		
+
+			<div class="signup">
+				<form [formGroup]="formularioLog" (ngSubmit)="login()"> 
+					<label>Bienvenido</label>
+          <input type="text" name="txt" placeholder="id" formControlName="id" required>
+          <input type="password" name="pswd" placeholder="Password" formControlName="pass" required>
+					<button type="submit" [disabled]="formularioLog.invalid" >Iniciar sesion</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label routerLink="/auth/register">Registrarse</label>
+				</form>
+			</div>
+	</div>
+</body>

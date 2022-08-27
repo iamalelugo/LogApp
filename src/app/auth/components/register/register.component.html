@@ -1,0 +1,18 @@
+<body>
+  <div class="main">  	
+    <div class="signup">
+      <form [formGroup]="formularioRegister" (ngSubmit)="register()"> 
+        <label for="chk" aria-hidden="true">Registrarse</label>
+        <input type="text" name="txt" placeholder="id" formControlName="id" required>
+        <input type="text" name="txt" placeholder="username" formControlName="usnmae" required>
+        <input type="password" name="pswd" placeholder="Password" formControlName="pass" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+    <div class="login">
+      <form>
+        <label routerLink="/auth/login">Volver</label>
+      </form>
+    </div>
+    </div>
+</body>
